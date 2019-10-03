@@ -1,4 +1,4 @@
-module github.com/FZambia/gorilla_websocket_memory
+module github.com/FZambia/go_websocket_memory
 
 go 1.13
 
