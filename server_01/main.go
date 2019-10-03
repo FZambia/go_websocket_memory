@@ -69,6 +69,7 @@ func printMemUsage() {
 	runtime.ReadMemStats(&m)
 	fmt.Printf("Alloc = %v MiB", bToMb(m.Alloc))
 	fmt.Printf("\tTotalAlloc = %v MiB", bToMb(m.TotalAlloc))
+	fmt.Printf("\tStackInuse = %v MiB", bToMb(m.StackInuse))
 	fmt.Printf("\tSys = %v MiB", bToMb(m.Sys))
 	fmt.Printf("\tNumGC = %v\n", m.NumGC)
 }
